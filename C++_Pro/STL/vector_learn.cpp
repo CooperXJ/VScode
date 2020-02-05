@@ -108,7 +108,8 @@ void test4()
 void test5()
 {
     vector<int> v;
-    v.reserve(1000);
+    v.reserve(1000);//reserve只是开辟内存空间，并没有初始化
+    //resize之后可以直接使用了，因为它有默认值
 }
 
 
