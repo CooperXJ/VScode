@@ -3,6 +3,26 @@
 #include <map>
 using namespace std;
 
+class myMap
+{
+    public:
+    myMap(int key,int ID)
+    {
+        this->key = key;
+        this->ID = ID;
+    }
+
+    bool operator < (const myMap &m1) const//如果下面的结构体不写的话  就必须要写这个  并且两个const是必须的
+    {
+        return this->key < m1.key;
+    }
+
+
+    public:
+        int key;
+        int ID;
+};
+
 //初始化map
 void test0()
 {
@@ -27,8 +47,40 @@ void test0()
     cout<<m1[100]<<endl;
 }
 
+//因为不知道myMap的排序顺序，所以不能够插入，因为map也是按照键来排序的
+//如果在类中不重载 < ,可以在此处用结构体重载 <
+struct compare
+{
+    bool operator()(myMap m1,myMap m2)
+    {
+        return m1.key<m2.key;
+    }
+};
+
+//Map的进阶操作
+void test1()
+{
+    myMap m1(1,2);
+    myMap m2(2,4);
+    myMap m3(3,4);
+    map<myMap,int> m;
+
+    m.insert(make_pair(m1,1));
+    m.insert(make_pair(m2,2));
+    m.insert(make_pair(m3,3));
+
+    for(map<myMap,int>::iterator it = m.begin();it!=m.end();it++)
+    {
+        cout<<(*it).first.key<<" "<<(*it).first.ID<<" "<<(*it).second<<endl;
+    }
+}
+
 int main()
 {
-    test0();
+    test1();
+    myMap m(1,2);
+    myMap m1(2,3);
+    cout<<(m<m1)<<endl;
+
     system("pause");
 }
