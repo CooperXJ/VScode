@@ -19,6 +19,7 @@ void test0()
     d.push_back(10);
     d.pop_front();
     for_each(d.begin(),d.end(),print_deque);
+    cout<<endl;
 }
 
 int main()
