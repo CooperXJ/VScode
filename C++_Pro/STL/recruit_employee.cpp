@@ -70,6 +70,7 @@ void PrintEmployee(multimap<int,Employee> employeeGroup)
 {
     cout<<"Group:research: "<<endl;
     multimap<int,Employee>::iterator it = employeeGroup.find(research);
+    //count的作用是寻找key一样的元素个数
     int count = employeeGroup.count(research);
 
     //  C/C++不能在同一条语句中定义不同类型的变量   除非用;分割

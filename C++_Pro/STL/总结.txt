@@ -7,9 +7,11 @@
 
 2.关于函数的重载  const
     https://blog.csdn.net/u014452891/article/details/76086998
-    
+
 3.关于const
     https://zhuanlan.zhihu.com/p/27919970
     反正不变的对象你就加个const修饰
 
+4.浅拷贝和深拷贝
+    https://www.bilibili.com/video/av35939892?p=72
     
