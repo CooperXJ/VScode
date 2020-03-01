@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "msvc2015",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}"
+                ]
+            },
+            "includePath": [
+                "${workspaceRoot}",
+                "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include/c++",
+                "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32",
+                "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward",
+                "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include",
+                "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1",
+                "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
