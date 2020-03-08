@@ -50,7 +50,7 @@ int htoi(char s[])
     return n;
 }
 
-int btoi(char s[])
+int btoi(char s[])    1010
 {
     int i ,n;
     n = 0;

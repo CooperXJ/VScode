@@ -11,8 +11,9 @@ using namespace std;
 
 double f()
 {
-    double x0 = 1.5;
+    double x0;
     double f,f1,x1;
+    x1 = 1.5;
 
     do{
     x0 = x1;
