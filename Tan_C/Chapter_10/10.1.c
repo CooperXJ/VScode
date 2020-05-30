@@ -6,8 +6,8 @@
 int main()
 {
     FILE *fp;
-    char ch,fileNmae[] = "C:/Users/Aaron/Desktop/s3/1.txt";
-    if((fp=fopen(fileNmae,"a+"))!=NULL)
+    char ch,fileName[] = "./1.txt";
+    if((fp=fopen(fileName,"a+"))!=NULL)
     {
         ch = getchar();
         while (ch!='#')
