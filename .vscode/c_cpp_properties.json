@@ -16,9 +16,10 @@
                 "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1",
                 "D:/learning/MinGW/lib/gcc/mingw32/8.2.0/include"
             ],
-            "intelliSenseMode": "msvc-x64",
+            "intelliSenseMode": "gcc-x64",
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "compilerPath": "D:/learning/MinGW/bin/g++.exe"
         }
     ],
     "version": 4
