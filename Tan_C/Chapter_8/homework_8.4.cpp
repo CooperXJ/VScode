@@ -35,12 +35,20 @@ void f1(int *a,int m)
     cout<<endl;
 }
 
+void test()
+{
+    static int a = 1;
+}
+
 int main()
 {
     // char str[] = "";
     // f(str,2);
 
-    int a[] = {12,43,65,67,8,2,7,11};
-    f1(a,4);
+    // int a[] = {12,43,65,67,8,2,7,11};
+    // f1(a,4);
+
+    test();
+    cout<<"1"<<endl;
     system("pause");
 }
